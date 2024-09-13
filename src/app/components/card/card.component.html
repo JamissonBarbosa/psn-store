@@ -2,12 +2,12 @@
   <a href="#" class="card-image">
     <img
       mat-card-image
-      src="/assets/bt-5.jpg"
+      [src]="[gameCover]"
       alt="battlefiels-5"
       width="100%"
       height="100%"
     />
-    <app-card-label gameLabel="Excluvise" />
-    //<app-card-price />
+    <app-card-label gameLabel="{{ gameLabel }}" />
+    <app-card-price gameType="{{ gameType }}" gamePrice="{{ gamePrice }}" />
   </a>
 </mat-card>
